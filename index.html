@@ -5,50 +5,63 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./style/style.css">
 </head>
 <body>
-    <section>
-        <div>  <!--  !First section -->
-            <div>
-                <img src="./images/X.png" alt="">
-                <img src="./images/O.png" alt="">
-            </div>
+    <main> 
+        <section id="container">
 
-            <div>
-                <img src="./images/X.png" alt="">
-                <button><a href="#">TURN</a></button>
+            <div class="flex items-center justify-between">  <!--  !First section -->
+    
+                <div id="first">
+                    <img class="header-img-x" src="./images/X.png" alt="">
+                    <img class="header-img-o" src="./images/O.png" alt="">
+                </div>
+    
+                <div class="flex items-center" id="center-header">
+                    <img class="header-img-x" src="./images/X.png" alt="">
+                    <button><a href="#">TURN</a></button>
+                </div>
+    
+                <div id="undo">
+                    <img class="img-o" src="./images/undo.png" alt="">
+                </div>
+    
             </div>
+    
+            <div>
+    
+    
+                <div class="play-box"><img class="img-o" src="./images/O.png" alt=""></div>
+                <div class="play-box"><img class="img-x" src="./images/X.png" alt=""></div>
+                <div class="play-box"><img class="img-o" src="./images/O.png" alt=""></div>
+                <div class="play-box"><img class="img-x" src="./images/X.png" alt=""></div>
+                <div class="play-box"><img class="img-o" src="./images/O.png" alt=""></div>
+                <div class="play-box"><img class="img-x" src="./images/X.png" alt=""></div>
+                <div class="play-box"><img class="img-o" src="./images/O.png" alt=""></div>
+                <div class="play-box"><img class="img-x" src="./images/X.png" alt=""></div>
+                <div class="play-box"><img class="img-o" src="./images/O.png" alt=""></div>
+    
+    
+                <div id="first-result" class="result">
+                    <h5>X (you)</h5>
+                    <h3>14</h3>
+                </div>
 
-            <div>
-                <img src="./images/undo.png" alt="">
-            </div>
+                <div id="second-result" class="result">
+                    <h5>Ties</h5>
+                    <h3>32</h3>
+                </div>
 
-        </div>
-
-        <div>
-            <div><img src="./images/O.png" alt=""></div>
-            <div><img src="./images/X.png" alt=""></div>
-            <div><img src="./images/O.png" alt=""></div>
-            <div><img src="./images/X.png" alt=""></div>
-            <div><img src="./images/O.png" alt=""></div>
-            <div><img src="./images/X.png" alt=""></div>
-            <div><img src="./images/O.png" alt=""></div>
-            <div><img src="./images/X.png" alt=""></div>
-            <div><img src="./images/O.png" alt=""></div>
-            <div>
-                <h5>X (you)</h5>
-                <h4>14</h4>
+                <div id="third-result" class="result">
+                    <h5>O (CPU)</h5>
+                    <h3>14</h3>
+                </div>
             </div>
-            <div>
-                <h5>Ties</h5>
-                <h4>32</h4>
-            </div>
-            <div>
-                <h5>O (CPU)</h5>
-                <h4>14</h4>
-            </div>
-        </div>
-    </section>
+    
+    
+        </section>
+    </main>
 
 
 </body>

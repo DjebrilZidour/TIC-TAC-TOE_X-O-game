@@ -1,63 +1,81 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-#first{
+body{
+    background-color: rgb(26,42,50);
+}
+main{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+
+
+}
+
+#nav{
+    padding: 2rem 2rem;
+
+}
+
+#first {
     display: flex;
     align-items: center;
 }
-.header-img-x{
+
+.header-img-x {
     width: 1rem;
     height: 1rem;
 }
 
-.header-img-o{
+.header-img-o {
     width: 1.25rem;
     height: 1.25rem;
 }
 
-.img-o{
+.img-o {
     width: 2.3rem;
     height: 2.3rem;
 }
 
-.img-x{
+.img-x {
     width: 1.7rem;
     height: 1.7rem;
 }
 
 
-.flex{
+.flex {
     display: flex;
 }
 
-.items-center{
+.items-center {
     align-items: center;
 }
-#container{
-    border: magenta 2px solid;
-    width: 35%;
-}
 
-.justify-between{
+
+
+.justify-between {
     justify-content: space-between;
 }
 
-#center-header{
+#center-header {
     padding: 0.5rem 1.25rem;
     background-color: rgb(32, 54, 64);
     border-radius: 1rem;
-    
+
 }
-#center-header button{
+
+#center-header button {
     padding: 0.2rem 1rem;
     margin: 0 1rem;
     border: none;
     background-color: transparent;
 
 }
-#center-header a{
+
+#center-header a {
     font-size: 1rem;
     font-weight: 800;
     text-decoration: none;
@@ -65,12 +83,14 @@
 
 }
 
-#undo{
-    background-color: #c4c4c4;
+#undo {
+    background-color: rgb(169, 191, 201);
+    padding: 0.3rem;
+    border-radius: 1rem;
 }
 
 
-.play-box{
+.play-box {
 
     width: 7.5rem;
     height: 7.5rem;
@@ -78,28 +98,55 @@
     place-items: center;
     background-color: rgb(32, 54, 64);
     border-radius: 1rem;
+    box-shadow: 0rem 1rem 1rem black;
 }
 
-.result{
+.result {
     padding: 0.5rem 1.2rem;
 
     width: 7.5rem;
-   
+
     border-radius: 1rem;
     text-align: center;
 }
 
-.result h5{
+.result h5 {
     text-transform: uppercase;
+    color: rgb(26,42,50);
 }
 
 
-#first-result{
+#first-result {
     background-color: rgb(59, 195, 190);
 }
-#second-result{
+
+#second-result {
     background-color: rgb(169, 191, 201);
 }
-#third-result{
+
+#third-result {
     background-color: rgb(241, 177, 69);
+}
+
+#btn-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* or repeat (3, 1fr)*/
+    place-items: center;
+    gap: 1.5rem;
+}
+
+@media screen and (max-width:500px) {
+    #container{
+        padding: 0 2rem;
+    }
+    .result{
+        width: 6rem;
+    }
+    .play-box{
+        width: 6rem;
+        height: 6rem;
+    }
+    #nav{
+        padding: 1rem;
+    }
 }

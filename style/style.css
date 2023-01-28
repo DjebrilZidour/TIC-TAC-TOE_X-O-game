@@ -140,13 +140,17 @@ main{
         padding: 0 2rem;
     }
     .result{
-        width: 6rem;
+        width: 5.5rem;
+    }
+    .result{
+        padding: 0 0;
     }
     .play-box{
-        width: 6rem;
-        height: 6rem;
+        width: 5.5rem;
+        height: 5.5rem;
     }
     #nav{
         padding: 1rem;
     }
+
 }
